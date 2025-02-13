@@ -11,23 +11,30 @@ public class Menu {
         System.out.println("Ingrese el punto que requiere visualizar de 1 hasta el 11: ");
         opc = sc.nextInt();
         Metodos m = new Metodos();
-        int d = m.SolicitarDimension();
 
         switch (opc) {
             case 1:
-                p1 punto1 = new p1();
-                punto1.sumarmatriz(d);
+                // p1 punto1 = new p1();
+                // punto1.sumarmatriz(d);
+                new p1().sumarmatriz(m.SolicitarDimension());
                 break;
 
             case 2:
-                p2 punto2 = new p2();
-                punto2.nmmayor(d);
+                // p2 punto2 = new p2();
+                // punto2.nmmayor(d);
+                new p2().nmmayor(m.SolicitarDimension());
+                break;
+
+            case 3:
+                // p2 punto2 = new p2();
+                // punto2.nmmayor(d);
+                new p3(m.SolicitarDimension());
                 break;
 
             default:
-            System.out.println("Pagina en mantenimiento");
+                System.out.println("Pagina en mantenimiento");
                 break;
         }
     }
-    
+
 }
