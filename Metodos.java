@@ -1,8 +1,11 @@
 package Estructura6AM;
 
+import java.lang.management.OperatingSystemMXBean;
 import java.util.Scanner;
 
 public class Metodos {
+
+    Scanner sc = new Scanner(System.in);
 
     public int SolicitarDimension() {
         Scanner sc = new Scanner(System.in);
@@ -21,6 +24,49 @@ public class Metodos {
             }
         }
         return m;
+    }
+
+    //Este metodo lo que hace es llenar una matriz de objetos, es decir una matriz que por cada posicion puede tener 
+    public ObjPersona[][] llenarmatrizObjetual(int d) {
+        ObjPersona[][] m = new ObjPersona[d][d];
+        for (int i = 0; i < m.length; i++) {
+            for (int j = 0; j < m.length; j++) {
+
+                ObjPersona obj = new ObjPersona(); // Creo un objeto para que capture todas las variables juntas
+                //para luego mandar todas las variables al objeto, ya que la posicion m[i][j] es un objeto y no un campo individual
+
+                System.out.println("Ingrese el nombre: ");
+                obj.setNombre(sc.next());
+                System.out.println("Ingrese el apellido: ");
+                obj.setApellido(sc.next());
+                System.out.println("Ingrese la direccion: ");
+                obj.setDireccion(sc.next());
+                System.out.println("Ingrese el telefono: ");
+                obj.setTelefono(sc.nextLong());
+
+                m[i][j] = obj;
+            }
+        }
+        return m;
+
+    }
+
+    public void MostrarMatrizObjetual(ObjPersona[][] m){
+
+        for (int i = 0; i < m.length; i++) {
+            for (int j = 0; j < m.length; j++) {
+
+                //El metodo get lo que hace es consultarle a la matriz que ya esta llena
+                //para que me muestre lo que hay en ese objeto
+
+                System.out.println("Nombre: " + m[i][j].getNombre());
+                System.out.println("Apellido: " + m[i][j].getApellido());
+                System.out.println("Direccion: " + m[i][j].getDireccion());
+                System.out.println("Telefono: " + m[i][j].getTelefono());
+                System.out.println("\n");
+            }
+        }
+
     }
 
     public void MostrarMatriz(int[][] m) {
