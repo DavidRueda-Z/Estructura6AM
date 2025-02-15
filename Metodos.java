@@ -28,7 +28,9 @@ public class Metodos {
 
     //Este metodo lo que hace es llenar una matriz de objetos, es decir una matriz que por cada posicion puede tener 
     public ObjPersona[][] llenarmatrizObjetual(int d) {
+
         ObjPersona[][] m = new ObjPersona[d][d];
+
         for (int i = 0; i < m.length; i++) {
             for (int j = 0; j < m.length; j++) {
 
@@ -66,6 +68,35 @@ public class Metodos {
                 System.out.println("\n");
             }
         }
+    }
+
+
+    public ObjPersona[][] llenarmatrizObjCll(int d){
+
+        ObjPersona[][] m = new ObjPersona[d][d];
+        
+        String nombre;
+        String apellido;
+        String direccion;
+        long telefono;
+
+        for (int i = 0; i < m.length; i++) {
+            for (int j = 0; j < m.length; j++) {
+                System.out.println("Ingrese el nombre: ");
+                nombre = sc.next();
+                System.out.println("Ingrese el apellido: ");
+                apellido = sc.next();
+                System.out.println("Ingrese la direccion: ");
+                direccion = sc.next();
+                System.out.println("Ingrese el telefono: ");
+                telefono = sc.nextLong();
+
+                ObjPersona o = new ObjPersona(nombre, apellido, direccion, telefono);
+                m[i][j] = o;
+            }
+        }
+
+        return m;
 
     }
 
