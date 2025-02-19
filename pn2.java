@@ -2,21 +2,18 @@ package Estructura6AM;
 
 import java.util.Scanner;
 
-public class pn1 {
+public class pn2 {
 
     public static void main(String[] args) {
 
-        // Creo un objeto para que trabaje los metodos
         Metodosnuevos m = new Metodosnuevos();
         Scanner sc = new Scanner(System.in);
-        int d = 0;
-        System.out.println("Ingrese la dimension de la matriz a trabajar: ");
-        d = sc.nextInt();
+        System.out.println("Ingrese el tamaño de la matriz: ");
+        int d = sc.nextInt();
         ObjProducto[][] M = new ObjProducto[d][d];
         M = m.llenarmatrizObjetual(d);
         m.MostrarMatrizObjetual(M);
-        System.out.println(m.BuscarProducto(M));
+        System.out.println(" El inventario tiene: " + m.SumarInventario(M) + " productos en este momento.");
 
     }
-
 }

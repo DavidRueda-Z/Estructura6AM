@@ -26,9 +26,7 @@ public class Menu {
                 break;
 
             case 3:
-                // p2 punto2 = new p2();
-                // punto2.nmmayor(d);
-                new p3(m.SolicitarDimension());
+                new p3()(m.SolicitarDimension());
                 break;
 
             default:
