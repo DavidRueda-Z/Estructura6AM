@@ -26,7 +26,6 @@ public class Menu {
                 break;
 
             case 3:
-                new p3()(m.SolicitarDimension());
                 break;
 
             default:

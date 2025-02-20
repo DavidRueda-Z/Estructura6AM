@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class pn2 {
 
-    public static void main(String[] args) {
+    public void punto2() {
 
         Metodosnuevos m = new Metodosnuevos();
         Scanner sc = new Scanner(System.in);

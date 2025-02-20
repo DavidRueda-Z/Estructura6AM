@@ -19,9 +19,19 @@ public class Metodosnuevos {
 
                 System.out.println("Ingrese el nombre: ");
                 obj.setNombre(sc.next());
+
                 System.out.println("Ingrese el precio");
+                while (!sc.hasNextLong()) {
+                    System.out.println("Dato incorrecto");
+                    sc.next();
+                }
                 obj.setPrecio(sc.nextLong());
+
                 System.out.println("Ingrese la cantidad: ");
+                while (!sc.hasNext()) {
+                    System.out.println("Dato incorrecto");
+                    sc.next();
+                }
                 obj.setCantidad(sc.nextLong());
 
                 m[i][j] = obj;
@@ -74,5 +84,6 @@ public class Metodosnuevos {
 
         return suma;
     }
+    
 
 }

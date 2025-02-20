@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class pn1 {
 
-    public static void main(String[] args) {
+    public void punto1() {
 
         // Creo un objeto para que trabaje los metodos
         Metodosnuevos m = new Metodosnuevos();
