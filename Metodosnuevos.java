@@ -50,8 +50,8 @@ public class Metodosnuevos {
                 // para que me muestre lo que hay en ese objeto
 
                 System.out.println("Nombre: " + m[i][j].getNombre().toUpperCase());
-                System.out.println("Apellido: " + m[i][j].getPrecio());
-                System.out.println("Direccion: " + m[i][j].getCantidad());
+                System.out.println("Precio: " + m[i][j].getPrecio());
+                System.out.println("Cantidad: " + m[i][j].getCantidad());
                 System.out.println("\n");
             }
         }
