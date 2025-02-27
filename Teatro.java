@@ -14,5 +14,7 @@ public class Teatro {
         ObjPuesto[][] M = new ObjPuesto[n][n];
         M = m.LlenarMatrizCuadrada(n);
         m.MostrarMatriz(M);
+        m.MatrizSele(M);
+        m.MostrarMatriz(M);
     }
 }

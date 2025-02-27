@@ -1,3 +1,5 @@
+package Estructura6AM;
+
 public class ObjLibro {
 
     private String titulo;
