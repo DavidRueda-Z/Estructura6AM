@@ -56,4 +56,17 @@ public class MetodosLibro {
             System.out.println("\n");
         }
     }
+
+    public void BuscarMayor(ObjLibro[][] m)
+    {
+        long mayor = 0;
+        for (int i = 0; i < m.length; i++) {
+            for (int j = 0; j < m.length; j++) {
+                if(m[i][j].getPrecio() > mayor)
+                {
+                    mayor = m[i][j].getPrecio();
+                }
+            }
+        }
+    }
 }
