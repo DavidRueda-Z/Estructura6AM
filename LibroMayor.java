@@ -3,9 +3,9 @@ package Estructura6AM;
 import java.util.Scanner;
 
 public class LibroMayor {
-    
+
     public static void main(String[] args) {
-        
+
         Scanner sc = new Scanner(System.in);
         MetodosLibro m = new MetodosLibro();
 
@@ -14,5 +14,7 @@ public class LibroMayor {
         ObjLibro[][] M = new ObjLibro[d][d];
         M = m.LlenarLibro(d);
         m.MostrarLiberia(M);
+        m.BuscarMayor(M);
+
     }
 }
