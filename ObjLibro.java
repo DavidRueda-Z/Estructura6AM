@@ -5,9 +5,8 @@ public class ObjLibro {
     private String titulo;
     private String autor;
     private long precio;
-    
-    public ObjLibro(String titulo, String  autor, long precio)
-    {
+
+    public ObjLibro(String titulo, String autor, long precio) {
         this.titulo = titulo;
         this.autor = autor;
         this.precio = precio;
@@ -40,7 +39,4 @@ public class ObjLibro {
     public ObjLibro() {
     }
 
-    
 }
-
-

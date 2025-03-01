@@ -26,7 +26,8 @@ public class Metodos {
         return m;
     }
 
-    //Este metodo lo que hace es llenar una matriz de objetos, es decir una matriz que por cada posicion puede tener 
+    // Este metodo lo que hace es llenar una matriz de objetos, es decir una matriz
+    // que por cada posicion puede tener
     public ObjPersona[][] llenarmatrizObjetual(int d) {
 
         ObjPersona[][] m = new ObjPersona[d][d];
@@ -35,7 +36,8 @@ public class Metodos {
             for (int j = 0; j < m.length; j++) {
 
                 ObjPersona obj = new ObjPersona(); // Creo un objeto para que capture todas las variables juntas
-                //para luego mandar todas las variables al objeto, ya que la posicion m[i][j] es un objeto y no un campo individual
+                // para luego mandar todas las variables al objeto, ya que la posicion m[i][j]
+                // es un objeto y no un campo individual
 
                 System.out.println("Ingrese el nombre: ");
                 obj.setNombre(sc.next());
@@ -53,13 +55,13 @@ public class Metodos {
 
     }
 
-    public void MostrarMatrizObjetual(ObjPersona[][] m){
+    public void MostrarMatrizObjetual(ObjPersona[][] m) {
 
         for (int i = 0; i < m.length; i++) {
             for (int j = 0; j < m.length; j++) {
 
-                //El metodo get lo que hace es consultarle a la matriz que ya esta llena
-                //para que me muestre lo que hay en ese objeto
+                // El metodo get lo que hace es consultarle a la matriz que ya esta llena
+                // para que me muestre lo que hay en ese objeto
 
                 System.out.println("Nombre: " + m[i][j].getNombre());
                 System.out.println("Apellido: " + m[i][j].getApellido());
@@ -70,11 +72,10 @@ public class Metodos {
         }
     }
 
-
-    public ObjPersona[][] llenarmatrizObjCll(int d){
+    public ObjPersona[][] llenarmatrizObjCll(int d) {
 
         ObjPersona[][] m = new ObjPersona[d][d];
-        
+
         String nombre;
         String apellido;
         String direccion;

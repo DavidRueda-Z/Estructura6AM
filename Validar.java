@@ -13,5 +13,5 @@ public class Validar {
         opt = sc.nextInt();
         System.out.println(opt);
     }
-    
+
 }

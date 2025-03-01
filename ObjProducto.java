@@ -5,8 +5,7 @@ public class ObjProducto {
     private String nombre;
     private long precio;
     private long cantidad;
-     //long = entero que permite capturar mas de 7 caracteres numericos
-
+    // long = entero que permite capturar mas de 7 caracteres numericos
 
     public ObjProducto(String nombre, long precio, long cantidad) {
         this.nombre = nombre;
@@ -18,11 +17,9 @@ public class ObjProducto {
         return nombre;
     }
 
-    public void setNombre(String nombre) { //Set es para asignar un valor a la variable nombre
+    public void setNombre(String nombre) { // Set es para asignar un valor a la variable nombre
         this.nombre = nombre;
     }
-
-
 
     public long getPrecio() {
         return precio;
@@ -32,8 +29,6 @@ public class ObjProducto {
         this.precio = precio;
     }
 
-
-
     public long getCantidad() {
         return cantidad;
     }
@@ -42,9 +37,6 @@ public class ObjProducto {
         this.cantidad = cantidad;
     }
 
-
     public ObjProducto() {
     }
 }
-
-
